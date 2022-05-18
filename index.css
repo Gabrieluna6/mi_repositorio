@@ -105,7 +105,18 @@ main .imagen-categoria {
     width: 300PX;
     height: 300PX;
     border-radius: 10%;
+    filter:grayscale(100);
+    transition: all .5s;
+    position: relative;
 }
+
+main .imagen-categoria img:hover {
+    filter:grayscale(0);
+    transform: scale(1.2);
+    z-index: 2;
+    cursor: pointer;
+}
+
 
 /* seccion productos */
 
