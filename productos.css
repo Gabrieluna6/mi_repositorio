@@ -1,0 +1,89 @@
+/* seccion productos */
+
+body {
+    background-color: aqua;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-areas:
+    "navegacion"
+    "banner"
+    "portfolio"
+    "pie"    
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    background-color: bisque;
+}
+
+nav {
+    grid-area: navegacion;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    background-color: rgb(197, 84, 186);
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: aliceblue
+    ;
+}
+
+nav ul li a:hover {
+    background-color: black;
+
+}
+
+header {
+    grid-area: banner;
+}
+
+header img {
+    width: 100%
+}
+
+main h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 4px 10px bisque;
+    padding: 50px;
+    text-align: center;
+}
+
+main {
+    grid-area: portfolio;
+    padding: 20px;
+}
+
+#galeriaImagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#galeriaImagenes img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+footer {
+    grid-area: pie;
+}
