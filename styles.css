@@ -1,4 +1,9 @@
 
+/* Seccion Nav */
+.container-fluid a:hover {
+color:rgb(201, 110, 0);
+}
+
 /* Titulo seccion categorias */
 
 main .titulo-cat {
